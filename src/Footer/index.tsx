@@ -16,13 +16,13 @@ export function SiteFooter() {
                     <img src="/images/google-play-badge.png" className="h-20" />
                 </div>
             </div>
-            <Footer.LinkGroup>
+            <Footer.LinkGroup className="pr-6 font-bold">
                 <Footer.Link className="text-white" href="#">Home</Footer.Link>
                 <Footer.Link className="text-white" href="#">About Us</Footer.Link>
                 <Footer.Link className="text-white" href="#">Privacy Policy</Footer.Link>
                 <Footer.Link className="text-white" href="#">Terms and Conditions</Footer.Link>
                 <Footer.Link className="text-white" href="#">Disclaimer</Footer.Link>
-                <Footer.Link className="text-white" href="#">Contact</Footer.Link>
+                <Footer.Link className="text-white" href="#">Contact Us</Footer.Link>
             </Footer.LinkGroup>
         </Footer>
     );

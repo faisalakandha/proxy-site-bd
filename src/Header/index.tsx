@@ -11,7 +11,7 @@ export function Header() {
         <img src="https://www.bdlawnews.com/wp-content/uploads/2021/06/bdln-logos.png" className="mr-3 h-10 sm:h-9" alt="Proxy Server BD Logo" />
       </Navbar.Brand>
       <Navbar.Toggle />
-      <Navbar.Collapse>
+      <Navbar.Collapse className="pr-6">
         <Navbar.Link className="text-white"  href="#">
           Home
         </Navbar.Link>

@@ -1,0 +1,21 @@
+1. Copyright 2022 middle bottom center placement. It should change 
+automatically year wise.
+
+2. Integrate google translate for ALL Languages
+3. All Links must be linked up ! It must be no follow
+4. Marquee effect for search box 
+5. Meta title, Meta Keyword and Meta description must be generated for search
+purposes. 
+6. Generate sitemap.xml
+7. Generate Robots.txt
+8. Make the sidebar ads sticky
+9. Footer sticky ad like healthinform.com
+10. Create searchbar at header corner
+11. All QuickLinks must work. 
+12.Add X and tumblr as addition to share buttons
+13. Quick Links system is when somebody clicks on these they are 
+redirected to the proxy site. 
+14. Speed must be optimized to 95% 
+15. Popup will appear after clicked on popup -> Our premium server now not available. 
+16. Add favicon
+17. Add Logo
