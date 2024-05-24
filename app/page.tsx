@@ -9,56 +9,52 @@ export default function Home() {
     <div>
       <Header />
       <div className="grid grid-cols-5 gap-x-6">
-        <div className="col-span-1 h-screen bg-orange-400">
+        <div className="col-span-1 h-[600px] w-[160px] bg-orange-400 mt-6 ml-6">
 
         </div>
 
         <div className="col-span-3">
           <div className="flex items-center justify-center">
-            <Link href={'/'}>Get premium access</Link><br />
+            <Link className="text-2xl" href={'/'}>Croxy Proxy Get Premium Access</Link><br />
           </div>
 
           <div className="py-6 flex items-center justify-center">
-            <Link className="" href='/'>Translate to another language</Link>
+            <Link className="text-xl" href='/'>Translate to another language</Link>
           </div>
 
           <div className="flex gap-x-6 items-center justify-center">
-            <div className="bg-orange-400 h-[300px] w-[300px]">
+            <div className="bg-orange-400 h-[250px] w-[300px]">
 
             </div>
 
-            <div className="bg-orange-400 h-[300px] w-[300px]">
+            <div className="bg-orange-400 h-[250px] w-[300px]">
 
             </div>
 
           </div>
 
-          <div className="flex flex-col items-center justify-center mt-14 bg-gray-200 py-24 px-4">
+          <div style={{borderRadius:'9px'}} className="flex flex-col items-center justify-center mt-14 bg-[#a7dbc8] py-24 px-4">
             <div className="flex gap-x-4">
               <div className="flex">
-                <div style={{ border: '1px solid grey' }} className="py-4 px-72">
-
+                <div style={{ border: '1px solid grey', borderRadius:'5px' }} className="w-[450px] pl-4 text-[#b4b1b1] bg-white items-center text-left flex text-wrap text-lg">
+                  Enter an Url or a search query to access
                 </div>
-                <div className="py-3 px-8 bg-green-400 flex items-center justify-center gap-x-3 text-xl">
-                  <ArrowRight />
-                  <p>Go!</p>
+                <div className="py-3 px-8 bg-[#037B21] flex items-center justify-center gap-x-3 text-xl">
+                  <ArrowRight className="text-yellow-200" />
+                  <p className="text-white font-bold">Go!</p>
                 </div>
 
               </div>
-              <div className="text-xl gap-x-3 flex items-center justify-center bg-green-400 py-3 px-2">
-                <Star />
-                <p>Premium</p>
+              <div style={{borderRadius:'5px'}} className="text-xl gap-x-3 flex items-center justify-center bg-[#037B21] py-3 px-3">
+                <Star className="text-white" />
+                <p className="text-white font-bold">Premium</p>
               </div>
             </div>
-            <p className="text-lg mt-8">Quick links: DuckDuckGo, Bing, Google, YouTube, Facebook, Wikipedia, Reddit, Instagram, TikTok, Twitter, Imgur, Twitch</p>
+            <p className="text-lg mt-8 text-center"><span className="font-bold">Quick links:</span> <Link className="text-[#04661c] underline font-bold" href=''>Google</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>Bing</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>DuckDuckGo</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>YouTube</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>Facebook</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>Wikipedia</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>Reddit</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>Instagram</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>TikTok</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>Twitter</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>Imgur</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>Twitch</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>Tumblr</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>Pinterest</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>LinkedIn</Link> </p>
           </div>
 
           <div className="flex gap-x-6 items-center justify-center mt-8">
-            <div className="bg-orange-400 h-[300px] w-[300px]">
-
-            </div>
-
-            <div className="bg-orange-400 h-[300px] w-[300px]">
+            <div className="bg-orange-400 h-[90px] w-[720px]">
 
             </div>
 
@@ -134,7 +130,7 @@ export default function Home() {
 
         </div>
 
-        <div className="col-span-1 h-screen bg-orange-400">
+        <div className="col-span-1 ml-auto h-[600px] mt-6 mr-6 w-[160px] bg-orange-400">
 
         </div>
 

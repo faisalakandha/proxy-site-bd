@@ -5,13 +5,13 @@ import { Footer } from "flowbite-react";
 
 export function SiteFooter() {
   return (
-    <Footer container>
-      <Footer.Copyright href="#" by="Flowbite™" year={2022} />
+    <Footer style={{backgroundColor:'#04641c'}} className="" container>
+      <Footer.Copyright className="text-white"   href="#" by="Flowbite™" year={2022} />
       <Footer.LinkGroup>
-        <Footer.Link href="#">About</Footer.Link>
-        <Footer.Link href="#">Privacy Policy</Footer.Link>
-        <Footer.Link href="#">Licensing</Footer.Link>
-        <Footer.Link href="#">Contact</Footer.Link>
+        <Footer.Link className="text-white"   href="#">About</Footer.Link>
+        <Footer.Link className="text-white"   href="#">Privacy Policy</Footer.Link>
+        <Footer.Link className="text-white"   href="#">Licensing</Footer.Link>
+        <Footer.Link className="text-white"   href="#">Contact</Footer.Link>
       </Footer.LinkGroup>
     </Footer>
   );
