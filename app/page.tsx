@@ -33,10 +33,10 @@ export default function Home() {
 
           </div>
 
-          <div style={{borderRadius:'9px'}} className="flex flex-col items-center justify-center mt-14 bg-[#a7dbc8] py-24 px-4">
+          <div style={{ borderRadius: '9px' }} className="flex flex-col items-center justify-center mt-14 bg-[#a7dbc8] py-24 px-4">
             <div className="flex gap-x-4">
               <div className="flex">
-                <div style={{ border: '1px solid grey', borderRadius:'5px' }} className="w-[450px] pl-4 text-[#b4b1b1] bg-white items-center text-left flex text-wrap text-lg">
+                <div style={{ border: '1px solid grey', borderRadius: '5px' }} className="w-[450px] pl-4 text-[#b4b1b1] bg-white items-center text-left flex text-wrap text-lg">
                   Enter an Url or a search query to access
                 </div>
                 <div className="py-3 px-8 bg-[#037B21] flex items-center justify-center gap-x-3 text-xl">
@@ -45,7 +45,7 @@ export default function Home() {
                 </div>
 
               </div>
-              <div style={{borderRadius:'5px'}} className="text-xl gap-x-3 flex items-center justify-center bg-[#037B21] py-3 px-3">
+              <div style={{ borderRadius: '5px' }} className="text-xl gap-x-3 flex items-center justify-center bg-[#037B21] py-3 px-3">
                 <Star className="text-white" />
                 <p className="text-white font-bold">Premium</p>
               </div>
@@ -53,7 +53,15 @@ export default function Home() {
             <p className="text-lg mt-8 text-center"><span className="font-bold">Quick links:</span> <Link className="text-[#04661c] underline font-bold" href=''>Google</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>Bing</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>DuckDuckGo</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>YouTube</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>Facebook</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>Wikipedia</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>Reddit</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>Instagram</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>TikTok</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>Twitter</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>Imgur</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>Twitch</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>Tumblr</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>Pinterest</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>LinkedIn</Link> </p>
           </div>
 
-          <div className="flex gap-x-6 items-center justify-center mt-8">
+          <div className="flex flex-col items-center justify-center mt-8">
+            <div className="flex flex-col items-center justify-center font-bold">
+              <p className="text-black">Install now our android app from playstore totally free for better experience</p>
+              <div className="flex gap-x-3 items-center justify-center">
+                <p className="text-xl text-[#037B21]">Click Here</p>
+                <ArrowRight className="text-[#037B21]" />
+                <img src="/images/google-play-badge.png" className="h-20" />
+              </div>
+            </div>
             <div className="bg-orange-400 h-[90px] w-[720px]">
 
             </div>
@@ -69,9 +77,9 @@ export default function Home() {
             <SocialIcon network="linkedin" />
           </div>
 
-          <div className="flex flex-col items-center justify-center gap-y-8" id="indexContent">
+          <div className="flex flex-col items-center justify-center gap-y-8 my-12" id="indexContent">
 
-            <h1><Globe2Icon /> Cutting-edge online proxy</h1>
+            <h1 className="bg-green-400 py-4 px-8 text-white font-bold text-xl">Cutting-edge online proxy</h1>
 
             <p>
               CroxyProxy is a reliable and free web proxy service that protects your privacy.
@@ -81,7 +89,7 @@ export default function Home() {
             </p>
 
 
-            <h2><MoveUpRightIcon /> Key advantages of CroxyProxy</h2>
+            <h2  className="bg-green-400 py-4 px-8 text-white font-bold text-xl">Key advantages of CroxyProxy</h2>
 
             <p>
               The main aim of CroxyProxy is to enhance information accessibility for everyone.
@@ -96,7 +104,7 @@ export default function Home() {
               <li>The basic version of the online proxy is free of charge.</li>
             </ul>
 
-            <h2><Mic2Icon /> Free web proxy features</h2>
+            <h2  className="bg-green-400 py-4 px-8 text-white font-bold text-xl">Free web proxy features</h2>
 
             <ul>
               <li>Hides your real network identity, allowing you to surf anonymously.</li>
@@ -106,7 +114,7 @@ export default function Home() {
               <li>Full support for video and audio playback.</li>
             </ul>
 
-            <h2><MicIcon /> How this free proxy works</h2>
+            <h2  className="bg-green-400 py-4 px-8 text-white font-bold text-xl">How this free proxy works</h2>
 
             <p>
               The free proxy is a kind of virtual pipeline, and your traffic flows through it to the
@@ -117,7 +125,7 @@ export default function Home() {
               can be sure that your web traffic to CroxyProxy will always be protected.
             </p>
 
-            <h2><YoutubeIcon /> YouTube proxy support</h2>
+            <h2  className="bg-green-400 py-4 px-8 text-white font-bold text-xl">YouTube proxy support</h2>
 
             <p>
               This web proxy supports YouTube. You don't need to install any additional software, and

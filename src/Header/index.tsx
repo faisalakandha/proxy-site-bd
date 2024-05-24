@@ -16,11 +16,12 @@ export function Header() {
           Home
         </Navbar.Link>
         <Navbar.Link className="text-white" as={Link} href="#">
-          About
+          About Us
         </Navbar.Link>
-        <Navbar.Link className="text-white"  href="#">Services</Navbar.Link>
-        <Navbar.Link className="text-white"  href="#">Pricing</Navbar.Link>
-        <Navbar.Link className="text-white"  href="#">Contact</Navbar.Link>
+        <Navbar.Link className="text-white"  href="#">Privacy Policy</Navbar.Link>
+        <Navbar.Link className="text-white"  href="#">Terms and Condisions</Navbar.Link>
+        <Navbar.Link className="text-white"  href="#">Disclaimer</Navbar.Link>
+        <Navbar.Link className="text-white"  href="#">Contact Us</Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
   );
