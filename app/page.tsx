@@ -4,6 +4,8 @@ import Link from "next/link";
 import { SocialIcon } from "react-social-icons";
 import { SiteFooter } from '@/src/Footer';
 import Marquee from 'react-fast-marquee';
+import GoogleTranslate from "@/src/GoogleTranslate";
+import { PremiumModal } from "@/src/PremiumModal";
 
 
 export default function Home() {
@@ -22,6 +24,7 @@ export default function Home() {
 
           <div className="py-6 flex items-center justify-center">
             <Link className="text-xl" href='/'>Translate to another language</Link>
+            <GoogleTranslate />
           </div>
 
           <div className="flex gap-x-6 items-center justify-center">
@@ -47,10 +50,7 @@ export default function Home() {
                 </div>
 
               </div>
-              <div style={{ borderRadius: '5px', cursor:'pointer' }} className="text-xl gap-x-3 flex items-center justify-center bg-[#037B21] py-3 px-3">
-                <Star className="text-white" />
-                <p className="text-white font-bold">Premium</p>
-              </div>
+              <PremiumModal />
             </div>
             <p className="text-lg mt-8 text-center"><span className="font-bold">Quick links:</span> <Link className="text-[#04661c] underline font-bold" href=''>Google</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>Bing</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>DuckDuckGo</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>YouTube</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>Facebook</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>Wikipedia</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>Reddit</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>Instagram</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>TikTok</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>Twitter</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>Imgur</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>Twitch</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>Tumblr</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>Pinterest</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>LinkedIn</Link> </p>
           </div>
