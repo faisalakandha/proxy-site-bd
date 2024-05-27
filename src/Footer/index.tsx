@@ -16,12 +16,12 @@ export function SiteFooter() {
                     </div>
                 </div>
                 <Footer.LinkGroup className="pr-6 font-bold">
-                    <Footer.Link className="text-white" href="#">Home</Footer.Link>
-                    <Footer.Link className="text-white" href="#">About Us</Footer.Link>
-                    <Footer.Link className="text-white" href="#">Privacy Policy</Footer.Link>
-                    <Footer.Link className="text-white" href="#">Terms and Conditions</Footer.Link>
-                    <Footer.Link className="text-white" href="#">Disclaimer</Footer.Link>
-                    <Footer.Link className="text-white" href="#">Contact Us</Footer.Link>
+                    <Footer.Link className="text-white" href="/">Home</Footer.Link>
+                    <Footer.Link className="text-white" href="/about">About Us</Footer.Link>
+                    <Footer.Link className="text-white" href="/privacy-policy">Privacy Policy</Footer.Link>
+                    <Footer.Link className="text-white" href="/terms-conditions">Terms and Conditions</Footer.Link>
+                    <Footer.Link className="text-white" href="/disclaimer">Disclaimer</Footer.Link>
+                    <Footer.Link className="text-white" href="/contact">Contact Us</Footer.Link>
                 </Footer.LinkGroup>
             </Footer>
             <div className="flex items-center justify-center">
