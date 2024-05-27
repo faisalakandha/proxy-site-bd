@@ -41,13 +41,13 @@ export default function Home() {
                 <div style={{ border: '1px solid grey', borderRadius: '5px' }} className="w-[450px] pl-4 text-[#b4b1b1] bg-white items-center text-left flex text-wrap text-lg">
                   <Marquee>Enter an Url or a search query to access</Marquee>
                 </div>
-                <div className="py-3 px-8 bg-[#037B21] flex items-center justify-center gap-x-3 text-xl">
+                <div style={{cursor:'pointer'}} className="py-3 px-8 bg-[#037B21] flex items-center justify-center gap-x-3 text-xl">
                   <ArrowRight className="text-yellow-200" />
                   <p className="text-white font-bold">Go!</p>
                 </div>
 
               </div>
-              <div style={{ borderRadius: '5px' }} className="text-xl gap-x-3 flex items-center justify-center bg-[#037B21] py-3 px-3">
+              <div style={{ borderRadius: '5px', cursor:'pointer' }} className="text-xl gap-x-3 flex items-center justify-center bg-[#037B21] py-3 px-3">
                 <Star className="text-white" />
                 <p className="text-white font-bold">Premium</p>
               </div>
