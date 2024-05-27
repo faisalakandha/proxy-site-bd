@@ -3,6 +3,8 @@ import { ArrowLeft, ArrowRight, EarIcon, Globe2Icon, Mic2Icon, MicIcon, MoveUpRi
 import Link from "next/link";
 import { SocialIcon } from "react-social-icons";
 import { SiteFooter } from '@/src/Footer';
+import Marquee from 'react-fast-marquee';
+
 
 export default function Home() {
   return (
@@ -37,7 +39,7 @@ export default function Home() {
             <div className="flex gap-x-4">
               <div className="flex">
                 <div style={{ border: '1px solid grey', borderRadius: '5px' }} className="w-[450px] pl-4 text-[#b4b1b1] bg-white items-center text-left flex text-wrap text-lg">
-                  Enter an Url or a search query to access
+                  <Marquee>Enter an Url or a search query to access</Marquee>
                 </div>
                 <div className="py-3 px-8 bg-[#037B21] flex items-center justify-center gap-x-3 text-xl">
                   <ArrowRight className="text-yellow-200" />
