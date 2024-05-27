@@ -31,16 +31,16 @@ export function Header() {
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse className="pr-6">
-          <Navbar.Link className="text-white" href="#">
+          <Navbar.Link className="text-white" href="/">
             Home
           </Navbar.Link>
-          <Navbar.Link className="text-white" as={Link} href="#">
+          <Navbar.Link className="text-white" as={Link} href="/about">
             About Us
           </Navbar.Link>
-          <Navbar.Link className="text-white" href="#">Privacy Policy</Navbar.Link>
-          <Navbar.Link className="text-white" href="#">Terms and Condisions</Navbar.Link>
-          <Navbar.Link className="text-white" href="#">Disclaimer</Navbar.Link>
-          <Navbar.Link className="text-white" href="#">Contact Us</Navbar.Link>
+          <Navbar.Link className="text-white" href="/privacy-policy">Privacy Policy</Navbar.Link>
+          <Navbar.Link className="text-white" href="/terms-conditions">Terms and Condisions</Navbar.Link>
+          <Navbar.Link className="text-white" href="/disclaimer">Disclaimer</Navbar.Link>
+          <Navbar.Link className="text-white" href="/contact">Contact Us</Navbar.Link>
         </Navbar.Collapse>
         <SearchIcon onClick={toggleSearch} style={{ cursor: 'pointer' }} className="text-white" />
       </Navbar>

@@ -11,7 +11,6 @@ import { PremiumModal } from "@/src/PremiumModal";
 export default function Home() {
   return (
     <div>
-      <Header />
       <div className="grid grid-cols-5 gap-x-6">
         <div className="col-span-1 h-[600px] w-[160px] bg-orange-400 mt-6 ml-6 sticky top-10 z-50">
 
@@ -22,11 +21,12 @@ export default function Home() {
             <Link className="text-2xl" href={'/'}>Croxy Proxy Get Premium Access</Link><br />
           </div>
 
-          <div className="py-6 flex items-center justify-center">
+          <div className="py-6 flex items-center justify-center font-bold">
             <Link className="text-xl" href='/'>Translate to another language</Link>
+          </div>
+          <div className="flex items-center justify-center mb-6">
             <GoogleTranslate />
           </div>
-
           <div className="flex gap-x-6 items-center justify-center">
             <div className="bg-orange-400 h-[250px] w-[300px]">
 
@@ -44,7 +44,7 @@ export default function Home() {
                 <div style={{ border: '1px solid grey', borderRadius: '5px' }} className="w-[450px] pl-4 text-[#b4b1b1] bg-white items-center text-left flex text-wrap text-lg">
                   <Marquee>Enter an Url or a search query to access</Marquee>
                 </div>
-                <div style={{cursor:'pointer'}} className="py-3 px-8 bg-[#037B21] flex items-center justify-center gap-x-3 text-xl">
+                <div style={{ cursor: 'pointer' }} className="py-3 px-8 bg-[#037B21] flex items-center justify-center gap-x-3 text-xl">
                   <ArrowRight className="text-yellow-200" />
                   <p className="text-white font-bold">Go!</p>
                 </div>
@@ -77,6 +77,7 @@ export default function Home() {
             <SocialIcon network="snapchat" />
             <SocialIcon network="pinterest" />
             <SocialIcon network="linkedin" />
+            <SocialIcon network="x" />
           </div>
 
           <div className="flex flex-col items-center justify-center gap-y-8 my-12" id="indexContent">
@@ -91,7 +92,7 @@ export default function Home() {
             </p>
 
 
-            <h2  className="bg-green-400 py-4 px-8 text-white font-bold text-xl">Key advantages of CroxyProxy</h2>
+            <h2 className="bg-green-400 py-4 px-8 text-white font-bold text-xl">Key advantages of CroxyProxy</h2>
 
             <p>
               The main aim of CroxyProxy is to enhance information accessibility for everyone.
@@ -106,7 +107,7 @@ export default function Home() {
               <li>The basic version of the online proxy is free of charge.</li>
             </ul>
 
-            <h2  className="bg-green-400 py-4 px-8 text-white font-bold text-xl">Free web proxy features</h2>
+            <h2 className="bg-green-400 py-4 px-8 text-white font-bold text-xl">Free web proxy features</h2>
 
             <ul>
               <li>Hides your real network identity, allowing you to surf anonymously.</li>
@@ -116,7 +117,7 @@ export default function Home() {
               <li>Full support for video and audio playback.</li>
             </ul>
 
-            <h2  className="bg-green-400 py-4 px-8 text-white font-bold text-xl">How this free proxy works</h2>
+            <h2 className="bg-green-400 py-4 px-8 text-white font-bold text-xl">How this free proxy works</h2>
 
             <p>
               The free proxy is a kind of virtual pipeline, and your traffic flows through it to the
@@ -127,7 +128,7 @@ export default function Home() {
               can be sure that your web traffic to CroxyProxy will always be protected.
             </p>
 
-            <h2  className="bg-green-400 py-4 px-8 text-white font-bold text-xl">YouTube proxy support</h2>
+            <h2 className="bg-green-400 py-4 px-8 text-white font-bold text-xl">YouTube proxy support</h2>
 
             <p>
               This web proxy supports YouTube. You don't need to install any additional software, and
@@ -145,7 +146,6 @@ export default function Home() {
         </div>
 
       </div>
-      <SiteFooter />
     </div>
   );
 }

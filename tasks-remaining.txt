@@ -1,4 +1,3 @@
-3. All Links must be linked up ! It must be no follow
 5. Meta title, Meta Keyword and Meta description must be generated for search
 purposes. 
 6. Generate sitemap.xml
@@ -8,4 +7,3 @@ purposes.
 12.Add X and tumblr as addition to share buttons
 13. Quick Links system is when somebody clicks on these they are 
 redirected to the proxy site. 
-16. Add favicon
