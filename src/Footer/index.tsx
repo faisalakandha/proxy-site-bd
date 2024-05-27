@@ -7,7 +7,6 @@ export function SiteFooter() {
     return (
         <div>
             <Footer style={{ backgroundColor: '#04641c' }} className="" container>
-                <Footer.Copyright className="text-white" href="#" by="Flowbite™" year={2022} />
                 <div className="flex flex-col items-center justify-center text-white font-bold">
                     <p>Install now our android app from playstore totally free for better experience</p>
                     <div className="flex gap-x-3 items-center justify-center">

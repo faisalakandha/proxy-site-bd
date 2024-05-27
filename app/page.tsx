@@ -11,7 +11,7 @@ export default function Home() {
     <div>
       <Header />
       <div className="grid grid-cols-5 gap-x-6">
-        <div className="col-span-1 h-[600px] w-[160px] bg-orange-400 mt-6 ml-6">
+        <div className="col-span-1 h-[600px] w-[160px] bg-orange-400 mt-6 ml-6 sticky top-10 z-50">
 
         </div>
 
@@ -140,7 +140,7 @@ export default function Home() {
 
         </div>
 
-        <div className="col-span-1 ml-auto h-[600px] mt-6 mr-6 w-[160px] bg-orange-400">
+        <div className="col-span-1 ml-auto h-[600px] mt-6 mr-6 w-[160px] bg-orange-400  sticky top-10 z-50">
 
         </div>
 
