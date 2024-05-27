@@ -1,8 +1,7 @@
 'use client';
 
 import { useState, useCallback } from 'react';
-import { useRouter } from 'next/navigation'; // Changed from 'next/router'
-import { SearchIcon } from 'lucide-react';
+import { useRouter } from 'next/navigation'; 
 import { Button } from 'flowbite-react';
  
 
