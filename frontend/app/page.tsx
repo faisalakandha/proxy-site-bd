@@ -16,7 +16,7 @@ export default function Home() {
 
         <div className="col-span-3">
           <div className="flex items-center justify-center">
-            <Link className="text-2xl" href={'/'}>Croxy Proxy Get Premium Access</Link><br />
+            <Link className="text-2xl" href={'/'}>Croxy Proxy Get Instant Free Access</Link><br />
           </div>
 
           <div className="py-6 flex items-center justify-center font-bold">
