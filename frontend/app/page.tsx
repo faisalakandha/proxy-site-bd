@@ -1,8 +1,6 @@
-import { Header } from "@/src/Header";
 import { ArrowLeft, ArrowRight, EarIcon, Globe2Icon, Mic2Icon, MicIcon, MoveUpRightIcon, Star, YoutubeIcon } from "lucide-react";
 import Link from "next/link";
 import { SocialIcon } from "react-social-icons";
-import { SiteFooter } from '@/src/Footer';
 import Marquee from 'react-fast-marquee';
 import GoogleTranslate from "@/src/GoogleTranslate";
 import { PremiumModal } from "@/src/PremiumModal";
