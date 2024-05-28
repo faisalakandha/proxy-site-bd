@@ -4,6 +4,7 @@ import { Footer, ThemeModeScript } from "flowbite-react";
 import "./globals.css";
 import { SiteFooter } from "@/src/Footer";
 import { Header } from "@/src/Header";
+import { HeaderMobile } from "@/src/Header-Mobile";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,7 +24,12 @@ export default function RootLayout({
         <ThemeModeScript />
       </head>
       <body className={inter.className}>
-        <Header />
+        <div className="hidden md:block">
+          <Header />
+        </div>
+        <div className="block md:hidden">
+          <HeaderMobile />
+        </div>
         <div>
           {children}
         </div>
