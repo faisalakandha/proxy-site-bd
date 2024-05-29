@@ -1,12 +1,18 @@
+'use client';
 import { ArrowLeft, ArrowRight, EarIcon, Globe2Icon, Mic2Icon, MicIcon, MoveUpRightIcon, Star, YoutubeIcon } from "lucide-react";
 import Link from "next/link";
 import { SocialIcon } from "react-social-icons";
 import Marquee from 'react-fast-marquee';
 import GoogleTranslate from "@/src/GoogleTranslate";
 import { PremiumModal } from "@/src/PremiumModal";
+import { useState } from "react";
+import { PocketShare, FacebookShare, LinkedinShare, TwitterShare, WhatsappShare, TelegramShare, FacebookMessengerShare, EmailShare, PinterestShare, RedditShare, LineShare, TumblrShare, ViberShare, WeiboShare, MailruShare, LiveJournalShare, WorkplaceShare, InstapaperShare } from 'react-share-kit'
 
 
 export default function Home() {
+
+  const [showMarquee, setShowMarquee] = useState(true);
+
   return (
     <div>
       <div className="grid grid-cols-5 gap-x-6">
@@ -39,9 +45,21 @@ export default function Home() {
           <div style={{ borderRadius: '9px' }} className="flex flex-col items-center justify-center mt-14 bg-[#a7dbc8] py-24 px-4">
             <div className="flex gap-x-4">
               <div className="flex">
-                <div style={{ border: '1px solid grey', borderRadius: '5px' }} className="w-[450px] pl-4 text-[#b4b1b1] bg-white items-center text-left flex text-wrap text-lg">
-                  <Marquee>Enter an Url or a search query to access</Marquee>
-                </div>
+                {
+                  showMarquee ?
+                    (
+                      <div onClick={() => setShowMarquee(false)} style={{ border: '1px solid grey', borderRadius: '5px', cursor: 'pointer' }} className="w-[450px] pl-4 text-[#b4b1b1] bg-white items-center text-left flex text-wrap text-lg">
+                        <Marquee>Enter an Url or a search query to access</Marquee>
+                      </div>
+                    ) :
+
+                    (
+                      <input style={{ border: '1px solid grey', borderRadius: '5px' }} className="w-[450px] pl-4 text-[#b4b1b1] bg-white items-center text-left flex text-wrap text-lg">
+                      </input>
+                    )
+
+                }
+
                 <div style={{ cursor: 'pointer' }} className="py-3 px-8 bg-[#037B21] flex items-center justify-center gap-x-3 text-xl">
                   <ArrowRight className="text-yellow-200" />
                   <p className="text-white font-bold">Go!</p>
@@ -69,13 +87,62 @@ export default function Home() {
           </div>
 
           <div className="my-8 flex items-center justify-center gap-x-4">
-            <SocialIcon network="youtube" />
+            {/* <SocialIcon network="youtube" />
             <SocialIcon network="facebook" />
             <SocialIcon network="instagram" />
             <SocialIcon network="snapchat" />
             <SocialIcon network="pinterest" />
             <SocialIcon network="linkedin" />
-            <SocialIcon network="x" />
+            <SocialIcon network="x" /> */}
+
+            <FacebookShare
+              url={'https://github.com/ayda-tech/react-share-kit'}
+              quote={'react-share-kit - social share buttons for next & react apps.'}
+              hashtag={'#react-share-kit'}
+            />
+
+            <TwitterShare
+              url={'https://github.com/ayda-tech/react-share-kit'}
+              title={'react-share-kit - social share buttons for next & react apps.'}
+            />
+
+            <LinkedinShare url={'https://github.com/ayda-tech/react-share-kit'} />
+
+            <WhatsappShare
+              url={'https://github.com/ayda-tech/react-share-kit'}
+              title={'react-share-kit - social share buttons for next & react apps.'}
+              separator=":: "
+            />
+
+
+            <TelegramShare url={'https://github.com/ayda-tech/react-share-kit'} />
+
+            <FacebookMessengerShare
+              url='https://github.com/ayda-tech/react-share-kit'
+              redirectUri="https://github.com/ayda-tech/react-share-kit"
+              appId={'dmm4kj9djk203k4liuf994p'}
+            />
+
+            <EmailShare
+              url={'https://github.com/ayda-tech/react-share-kit'}
+              subject={'Next Share'}
+              body="body"
+            />
+
+            
+            <PinterestShare
+              url={'https://github.com/ayda-tech/react-share-kit'}
+              media={'react-share-kit - social share buttons for next & react apps.'}
+            />
+
+            <RedditShare url={'https://github.com/ayda-tech/react-share-kit'} />
+
+
+            <TumblrShare
+              url={'https://github.com/ayda-tech/react-share-kit'}
+              caption="react-share-kit - social share buttons for next & react apps."
+            />
+
           </div>
 
           <div className="flex flex-col items-center justify-center gap-y-8 my-12" id="indexContent">
