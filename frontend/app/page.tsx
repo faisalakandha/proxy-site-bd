@@ -54,7 +54,7 @@ export default function Home() {
                     ) :
 
                     (
-                      <input style={{ border: '1px solid grey', borderRadius: '5px' }} className="w-[450px] pl-4 text-[#b4b1b1] bg-white items-center text-left flex text-wrap text-lg">
+                      <input style={{ border: '1px solid grey', borderRadius: '5px' }} className="w-[450px] pl-4 text-black bg-white items-center text-left flex text-wrap text-lg">
                       </input>
                     )
 
