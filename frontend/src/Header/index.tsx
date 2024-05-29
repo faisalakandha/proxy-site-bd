@@ -30,9 +30,7 @@ export function Header() {
         <Navbar.Link className="text-white" href="/contact">Contact Us</Navbar.Link>
       </Navbar.Collapse>
       <div className="flex">
-        <div style={{ display: 'inline-block', width: '200px', }} className="py-2 text-green bg-white ml-auto">
-          <SearchIcon style={{marginRight:'3px', cursor:'pointer'}} className="ml-auto" />
-        </div>
+      <form  className="flex w-full items-center space-x-2"> <input style={{borderRadius:'10px'}} type="text" className="bg-white w-full" placeholder="Search Anything..."  /> <button style={{borderRadius:'5px', border:'1px solid black'}} className='hover:bg-gray-500 hover:text-white bg-white text-md font-semibold px-3 py-2' type="submit"><SearchIcon /></button> </form>
       </div>
     </Navbar>
   )

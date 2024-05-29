@@ -7,7 +7,6 @@ import "./globals.css";
 import { SiteFooter } from "@/src/Footer";
 import { Header } from "@/src/Header";
 import { HeaderMobile } from "@/src/Header-Mobile";
-import SiteDownAdFooter from "@/src/Ads/SiteDownAdFooter";
 import { CircleX } from "lucide-react";
 import { useState } from "react";
 
