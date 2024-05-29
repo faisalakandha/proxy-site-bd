@@ -29,6 +29,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <ThemeModeScript />
+        <script async src="https://www.speckbridge.com/widget/widget.js" data-id="r4-widget-connection"></script>
       </head>
       <body className={inter.className}>
         <div className="hidden md:block">

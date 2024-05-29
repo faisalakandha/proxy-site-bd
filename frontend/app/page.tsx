@@ -42,34 +42,7 @@ export default function Home() {
 
           </div>
 
-          <div style={{ borderRadius: '9px' }} className="flex flex-col items-center justify-center mt-14 bg-[#a7dbc8] py-24 px-4">
-            <div className="flex gap-x-4">
-              <div className="flex">
-                {
-                  showMarquee ?
-                    (
-                      <div onClick={() => setShowMarquee(false)} style={{ border: '1px solid grey', borderRadius: '5px', cursor: 'pointer' }} className="w-[450px] pl-4 text-[#b4b1b1] bg-white items-center text-left flex text-wrap text-lg">
-                        <Marquee>Enter an Url or a search query to access</Marquee>
-                      </div>
-                    ) :
-
-                    (
-                      <input style={{ border: '1px solid grey', borderRadius: '5px' }} className="w-[450px] pl-4 text-black bg-white items-center text-left flex text-wrap text-lg">
-                      </input>
-                    )
-
-                }
-
-                <div style={{ cursor: 'pointer' }} className="py-3 px-8 bg-[#037B21] flex items-center justify-center gap-x-3 text-xl">
-                  <ArrowRight className="text-yellow-200" />
-                  <p className="text-white font-bold">Go!</p>
-                </div>
-
-              </div>
-              <PremiumModal />
-            </div>
-            <p className="text-lg mt-8 text-center"><span className="font-bold">Quick links:</span> <Link className="text-[#04661c] underline font-bold" href=''>Google</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>Bing</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>DuckDuckGo</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>YouTube</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>Facebook</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>Wikipedia</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>Reddit</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>Instagram</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>TikTok</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>Twitter</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>Imgur</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>Twitch</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>Tumblr</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>Pinterest</Link>,  <Link className="text-[#04661c] underline font-bold" href=''>LinkedIn</Link> </p>
-          </div>
+          <div id="r4-widget-form"></div>
 
           <div className="flex flex-col items-center justify-center mt-8">
             <div className="flex flex-col items-center justify-center font-bold">
@@ -96,49 +69,60 @@ export default function Home() {
             <SocialIcon network="x" /> */}
 
             <FacebookShare
+              size={40}
               url={'https://github.com/ayda-tech/react-share-kit'}
               quote={'react-share-kit - social share buttons for next & react apps.'}
               hashtag={'#react-share-kit'}
             />
 
             <TwitterShare
+              size={40}
               url={'https://github.com/ayda-tech/react-share-kit'}
               title={'react-share-kit - social share buttons for next & react apps.'}
             />
 
-            <LinkedinShare url={'https://github.com/ayda-tech/react-share-kit'} />
+            <LinkedinShare
+              size={40}
+              url={'https://github.com/ayda-tech/react-share-kit'} />
 
             <WhatsappShare
+              size={40}
               url={'https://github.com/ayda-tech/react-share-kit'}
               title={'react-share-kit - social share buttons for next & react apps.'}
               separator=":: "
             />
 
 
-            <TelegramShare url={'https://github.com/ayda-tech/react-share-kit'} />
+            <TelegramShare url={'https://github.com/ayda-tech/react-share-kit'}
+              size={40}
+            />
 
             <FacebookMessengerShare
+              size={40}
               url='https://github.com/ayda-tech/react-share-kit'
               redirectUri="https://github.com/ayda-tech/react-share-kit"
               appId={'dmm4kj9djk203k4liuf994p'}
             />
 
             <EmailShare
+              size={40}
               url={'https://github.com/ayda-tech/react-share-kit'}
               subject={'Next Share'}
               body="body"
             />
 
-            
+
             <PinterestShare
+              size={40}
               url={'https://github.com/ayda-tech/react-share-kit'}
               media={'react-share-kit - social share buttons for next & react apps.'}
             />
 
-            <RedditShare url={'https://github.com/ayda-tech/react-share-kit'} />
+            <RedditShare url={'https://github.com/ayda-tech/react-share-kit'} size={40} />
 
 
             <TumblrShare
+              size={40}
               url={'https://github.com/ayda-tech/react-share-kit'}
               caption="react-share-kit - social share buttons for next & react apps."
             />
